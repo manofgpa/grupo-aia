@@ -10,7 +10,7 @@ const FEATURES = [
   {
     title: 'Foco em Compulsões',
     description:
-      'Programas desenvolvidos especialmente para quem lida com compulsão de compras, alimentar e outros comportamentos compulsivos.',
+      'Grupos terapêuticos online focados na conscientização e troca de experiências sobre os diferentes tipos de compulsão — de compras, alimentar e outros comportamentos compulsivos.',
   },
   {
     title: 'Abordagem Personalizada',

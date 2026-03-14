@@ -40,10 +40,10 @@ export function About() {
           }`}
         >
           <p className="text-warm-gray text-lg leading-relaxed mb-6">
-            Nosso trabalho é integrar o que a vida fragmentou. Não oferecemos fórmulas prontas
-            nem julgamentos. Oferecemos presença, escuta e um caminho construído junto com você.
-            A palavra que nos guia é Acolhimento — receber alguém com calor, dizer
-            &ldquo;você pertence aqui.&rdquo;
+            Através de grupos terapêuticos online, criamos espaços de conscientização e troca de
+            experiências. Não oferecemos fórmulas prontas nem julgamentos — oferecemos presença,
+            escuta e o poder de saber que você não está sozinho. A palavra que nos guia é
+            Acolhimento — receber alguém com calor, dizer &ldquo;você pertence aqui.&rdquo;
           </p>
         </div>
 
