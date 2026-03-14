@@ -3,10 +3,12 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 interface GoldRuleProps {
   readonly width?: string
   readonly className?: string
+  readonly forceVisible?: boolean
 }
 
-export function GoldRule({ width = '12rem', className = '' }: GoldRuleProps) {
-  const { ref, isVisible } = useScrollReveal({ threshold: 0.3 })
+export function GoldRule({ width = '12rem', className = '', forceVisible }: GoldRuleProps) {
+  const { ref, isVisible: scrollVisible } = useScrollReveal({ threshold: 0.3 })
+  const isVisible = forceVisible ?? scrollVisible
 
   return (
     <div ref={ref} className={className}>
@@ -26,7 +28,7 @@ export function GoldRule({ width = '12rem', className = '' }: GoldRuleProps) {
           strokeWidth="1.5"
           strokeDasharray="200"
           strokeDashoffset={isVisible ? '0' : '200'}
-          className="text-signature-gold transition-[stroke-dashoffset] duration-1000 ease-out"
+          className="text-signature-gold transition-[stroke-dashoffset] duration-[1500ms] ease-out"
         />
       </svg>
     </div>
