@@ -13,8 +13,8 @@ export function Quote() {
         }`}
       >
         <blockquote className="font-serif text-warm-white text-2xl md:text-4xl italic leading-relaxed mb-8">
-          Quando alguém entra pela porta do Aia, não se torna um paciente.
-          Torna-se uma pessoa sendo acompanhada.
+          Você não precisa ter todas as respostas. Precisa apenas de um lugar
+          onde possa ser honesto sobre o que sente.
         </blockquote>
 
         <div className="flex justify-center mb-6">

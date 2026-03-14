@@ -8,7 +8,7 @@ export function Contact() {
     <section id="contato" className="py-32 px-6">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="font-serif text-rich-black text-4xl md:text-5xl font-normal mb-6">
-          O primeiro passo é simples.
+          Dar o primeiro passo já é um ato de coragem.
         </h2>
 
         <div className="flex justify-center mb-10">

@@ -5,22 +5,22 @@ const FEATURES = [
   {
     title: 'Equipe Multidisciplinar',
     description:
-      'Psicologia, psiquiatria e práticas holísticas integradas em uma abordagem coesa.',
+      'Psicologia, psiquiatria e práticas integrativas trabalhando juntas para oferecer o cuidado que você precisa.',
   },
   {
-    title: 'Protocolos Específicos',
+    title: 'Foco em Compulsões',
     description:
-      'Desenvolvidos para a faixa dos 40–90 anos — não adaptados de populações mais jovens.',
+      'Programas desenvolvidos especialmente para quem lida com compulsão de compras, alimentar e outros comportamentos compulsivos.',
   },
   {
-    title: 'Sensibilidade Cultural',
+    title: 'Abordagem Personalizada',
     description:
-      'O Acolhimento português integrado na estrutura clínica como metodologia de cuidado.',
+      'Cada pessoa tem uma história diferente. Nossos protocolos são adaptados às suas necessidades, não o contrário.',
   },
   {
     title: 'Continuidade de Cuidado',
     description:
-      'A mesma equipe acompanha você durante toda a sua jornada. Sem rotatividade, sem recomeços.',
+      'A mesma equipe acompanha você do início ao fim. Sem rotatividade, sem recomeços. Construímos vínculo.',
   },
 ] as const
 
@@ -53,8 +53,8 @@ export function Approach() {
         <GoldRule className="mb-6" />
 
         <p className="text-warm-gray text-lg leading-relaxed mb-10">
-          O Aia ocupa um espaço único: clinicamente rigoroso E emocionalmente acolhedor,
-          baseado em evidências E centrado na alma.
+          Acreditamos que cuidar de verdade exige duas coisas: competência clínica e calor
+          humano. No Aia, você encontra as duas.
         </p>
 
         {FEATURES.map((feature) => (

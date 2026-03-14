@@ -3,21 +3,21 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 const PILLARS = [
   {
     title: 'Alma',
-    subtitle: 'A essência honrada',
+    subtitle: 'Sua história importa',
     description:
-      'Cada pessoa traz décadas de experiência de vida. Não simplificamos. Encontramos complexidade com complexidade, e profundidade com profundidade.',
+      'Cada pessoa carrega uma trajetória única. Não simplificamos nem rotulamos. Buscamos compreender o que está por trás de cada comportamento, com profundidade e respeito.',
   },
   {
     title: 'Integração',
-    subtitle: 'O método que une',
+    subtitle: 'Cuidado que conecta',
     description:
-      'Não tratamos sintomas em silos. Integramos — mente, corpo, história, relacionamentos — em uma abordagem unificada de saúde psicológica.',
+      'Compulsão não é um problema isolado. Integramos mente, corpo, história e relacionamentos em uma abordagem que enxerga você por inteiro — não apenas o sintoma.',
   },
   {
     title: 'Acolhimento',
-    subtitle: 'A experiência vivida',
+    subtitle: 'Um espaço seguro',
     description:
-      'Acolher não é apenas nossa recepção. É nossa metodologia clínica. Cada interação é desenhada para que você se sinta cuidado.',
+      'Acolher é mais do que receber bem. É criar um ambiente onde você possa ser honesto sobre suas dificuldades, sem medo de julgamento. Cada interação é pensada para que você se sinta cuidado.',
   },
 ] as const
 

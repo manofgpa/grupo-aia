@@ -10,7 +10,7 @@ export function About() {
     <section className="py-20 px-6">
       <div className="max-w-2xl mx-auto">
         <h2 className="font-serif text-rich-black text-4xl md:text-5xl font-normal mb-6">
-          A guardiã da alma não conserta o que está quebrado.
+          Você não está quebrado. E não precisa passar por isso sozinho.
         </h2>
 
         <GoldRule className="mb-10" />
@@ -24,8 +24,10 @@ export function About() {
           }`}
         >
           <p className="text-warm-gray text-lg leading-relaxed mb-6">
-            Ela ilumina o que sempre esteve inteiro. O Grupo Aia nasceu de uma crença radical:
-            saúde psicológica após os 40 não é sobre administrar o declínio — é sobre integração.
+            O Grupo Aia nasceu de uma escuta atenta a uma dor que muitos carregam em silêncio:
+            a compulsão. Seja por compras, por comida ou por outros comportamentos que parecem
+            fugir do controle — sabemos que por trás de cada impulso existe uma história que
+            merece ser ouvida.
           </p>
         </div>
 
@@ -38,9 +40,10 @@ export function About() {
           }`}
         >
           <p className="text-warm-gray text-lg leading-relaxed mb-6">
-            Sobre tecer uma vida inteira de experiências em algo completo. A palavra portuguesa
-            &ldquo;Acolhimento&rdquo; não tem tradução perfeita — significa receber alguém com
-            calor, fazer com que se sinta acolhido, dizer &ldquo;você pertence aqui.&rdquo;
+            Nosso trabalho é integrar o que a vida fragmentou. Não oferecemos fórmulas prontas
+            nem julgamentos. Oferecemos presença, escuta e um caminho construído junto com você.
+            A palavra que nos guia é Acolhimento — receber alguém com calor, dizer
+            &ldquo;você pertence aqui.&rdquo;
           </p>
         </div>
 
@@ -53,8 +56,8 @@ export function About() {
           }`}
         >
           <p className="text-warm-gray text-lg leading-relaxed">
-            Quando alguém entra pela porta do Aia, não se torna um paciente. Torna-se uma pessoa
-            sendo acompanhada. A alma é honrada. A integração é o método. O acolhimento é a experiência.
+            Quando alguém chega ao Aia, não se torna um paciente. Torna-se uma pessoa
+            acompanhada — com respeito à sua história, ao seu tempo e à sua singularidade.
           </p>
         </div>
       </div>
