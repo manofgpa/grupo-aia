@@ -43,10 +43,20 @@ function FeatureParagraph({
 }
 
 export function Approach() {
+  const heading = useScrollReveal()
+
   return (
     <section className="py-20 px-6">
       <div className="max-w-2xl mx-auto">
-        <h2 className="font-serif text-rich-black text-4xl md:text-5xl font-normal mb-6">
+        <h2
+          ref={heading.ref}
+          className={`font-serif text-rich-black text-4xl md:text-5xl font-normal mb-6 transition-all duration-800 ${
+            heading.isVisible ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{
+            clipPath: heading.isVisible ? 'inset(0)' : 'inset(100% 0 0 0)',
+          }}
+        >
           Rigor clínico com calor humano.
         </h2>
 

@@ -1,3 +1,4 @@
+import { useScrollReveal } from '../hooks/useScrollReveal'
 import { GoldRule } from './GoldRule'
 
 const WHATSAPP_URL =
@@ -56,6 +57,9 @@ function InstagramIcon() {
 }
 
 export function Contact() {
+  const emailReveal = useScrollReveal({ staggerIndex: 0 })
+  const igReveal = useScrollReveal({ staggerIndex: 1 })
+
   return (
     <section id="contato" className="py-32 px-6">
       <div className="max-w-2xl mx-auto text-center">
@@ -71,7 +75,7 @@ export function Contact() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex items-center gap-3 bg-espresso hover:bg-rich-black text-warm-white font-medium tracking-wide px-10 py-4 rounded-full transition-colors duration-200 cursor-pointer"
+          className="group inline-flex items-center gap-3 bg-espresso hover:bg-rich-black text-warm-white font-medium tracking-wide px-10 py-4 rounded-full transition-colors duration-200 cursor-pointer animate-glow-pulse"
         >
           <WhatsAppIcon />
           <span>Iniciar Conversa</span>
@@ -79,8 +83,14 @@ export function Contact() {
 
         <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-8 text-stone">
           <a
+            ref={emailReveal.ref}
             href="mailto:adm@grupaiapsicologia.com.br"
-            className="group flex items-center gap-2.5 hover:text-signature-gold transition-colors duration-200 cursor-pointer"
+            className={`group flex items-center gap-2.5 hover:text-signature-gold transition-all duration-700 cursor-pointer ${
+              emailReveal.isVisible
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-4'
+            }`}
+            style={{ transitionDelay: emailReveal.transitionDelay }}
           >
             <EmailIcon />
             <span className="text-sm tracking-wide">adm@grupaiapsicologia.com.br</span>
@@ -89,10 +99,16 @@ export function Contact() {
           <span className="hidden sm:block w-px h-5 bg-sand" aria-hidden="true" />
 
           <a
+            ref={igReveal.ref}
             href="https://www.instagram.com/grupo_aia_psi"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-2.5 hover:text-signature-gold transition-colors duration-200 cursor-pointer"
+            className={`group flex items-center gap-2.5 hover:text-signature-gold transition-all duration-700 cursor-pointer ${
+              igReveal.isVisible
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-4'
+            }`}
+            style={{ transitionDelay: igReveal.transitionDelay }}
           >
             <InstagramIcon />
             <span className="text-sm tracking-wide">@grupo_aia_psi</span>

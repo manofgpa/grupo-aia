@@ -18,15 +18,17 @@ export function FullBleedPhoto({
   return (
     <div
       ref={ref}
-      className={`w-full overflow-hidden transition-opacity duration-1000 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
+      className={`w-full overflow-hidden transition-all duration-1000 ${
+        isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
       } ${className}`}
       style={{ aspectRatio }}
     >
       <img
         src={src}
         alt={alt}
-        className="w-full h-full object-cover grayscale"
+        className={`w-full h-full object-cover grayscale ${
+          isVisible ? 'animate-ken-burns' : ''
+        }`}
         loading="lazy"
       />
     </div>

@@ -1,4 +1,5 @@
 import { Navbar } from './components/Navbar'
+import { ScrollProgress } from './components/ScrollProgress'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { FullBleedPhoto } from './components/FullBleedPhoto'
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <ScrollProgress />
       <main>
         <Hero />
         <About />

@@ -21,8 +21,11 @@ function Member({
   role,
   specialty,
   image,
-}: (typeof TEAM_MEMBERS)[number]) {
-  const { ref, isVisible } = useScrollReveal()
+  index,
+}: (typeof TEAM_MEMBERS)[number] & { readonly index: number }) {
+  const { ref, isVisible, transitionDelay } = useScrollReveal({
+    staggerIndex: index,
+  })
 
   return (
     <div
@@ -30,12 +33,17 @@ function Member({
       className={`flex flex-col items-center text-center transition-all duration-700 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
       }`}
+      style={{ transitionDelay }}
     >
       <div className="w-48 h-60 md:w-56 md:h-72 mb-6 overflow-hidden rounded-sm">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover object-top"
+          className={`w-full h-full object-cover object-top grayscale-[30%] transition-all duration-500 hover:scale-105 hover:grayscale-0`}
+          style={{
+            clipPath: isVisible ? 'inset(0)' : 'inset(100% 0 0 0)',
+            transition: `clip-path 0.8s ease-out ${transitionDelay}, transform 0.5s, filter 0.5s`,
+          }}
         />
       </div>
 
@@ -65,8 +73,8 @@ export function Team() {
         <GoldRule className="mb-10" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-10">
-          {TEAM_MEMBERS.map((member) => (
-            <Member key={member.name} {...member} />
+          {TEAM_MEMBERS.map((member, i) => (
+            <Member key={member.name} {...member} index={i} />
           ))}
         </div>
       </div>

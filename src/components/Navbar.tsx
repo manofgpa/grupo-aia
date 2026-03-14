@@ -19,12 +19,18 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <a href="#">
-          <img src="/logo.png" alt="Grupo Aia" className="h-40 rounded-lg" />
+          <img
+            src="/logo.png"
+            alt="Grupo Aia"
+            className={`h-40 rounded-lg transition-transform duration-300 ${
+              scrolled ? 'scale-90' : 'scale-100'
+            }`}
+          />
         </a>
 
         <a
           href="#contato"
-          className="text-warm-white/80 hover:text-signature-gold text-sm font-medium tracking-wider uppercase transition-colors duration-200"
+          className="relative text-warm-white/80 hover:text-signature-gold text-sm font-medium tracking-wider uppercase transition-colors duration-200 after:absolute after:left-0 after:bottom-0 after:h-px after:w-full after:bg-signature-gold after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
         >
           Contato
         </a>

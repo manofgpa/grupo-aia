@@ -2,6 +2,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 import { GoldRule } from './GoldRule'
 
 export function About() {
+  const heading = useScrollReveal()
   const p1 = useScrollReveal()
   const p2 = useScrollReveal()
   const p3 = useScrollReveal()
@@ -9,7 +10,15 @@ export function About() {
   return (
     <section className="py-20 px-6">
       <div className="max-w-2xl mx-auto">
-        <h2 className="font-serif text-rich-black text-4xl md:text-5xl font-normal mb-6">
+        <h2
+          ref={heading.ref}
+          className={`font-serif text-rich-black text-4xl md:text-5xl font-normal mb-6 transition-all duration-800 ${
+            heading.isVisible ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{
+            clipPath: heading.isVisible ? 'inset(0)' : 'inset(100% 0 0 0)',
+          }}
+        >
           Você não está quebrado. E não precisa passar por isso sozinho.
         </h2>
 
