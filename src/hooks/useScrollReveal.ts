@@ -8,14 +8,14 @@ interface UseScrollRevealOptions {
   readonly staggerDelay?: number
 }
 
-export function useScrollReveal({
+export function useScrollReveal<T extends HTMLElement = HTMLDivElement>({
   threshold = 0.15,
   rootMargin = '0px',
   once = true,
   staggerIndex = 0,
   staggerDelay = 120,
 }: UseScrollRevealOptions = {}) {
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<T>(null)
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {

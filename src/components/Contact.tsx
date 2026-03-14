@@ -57,8 +57,8 @@ function InstagramIcon() {
 }
 
 export function Contact() {
-  const emailReveal = useScrollReveal({ staggerIndex: 0 })
-  const igReveal = useScrollReveal({ staggerIndex: 1 })
+  const emailReveal = useScrollReveal<HTMLAnchorElement>({ staggerIndex: 0 })
+  const igReveal = useScrollReveal<HTMLAnchorElement>({ staggerIndex: 1 })
 
   return (
     <section id="contato" className="py-32 px-6">
