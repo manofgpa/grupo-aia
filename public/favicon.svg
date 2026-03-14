@@ -1,4 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
   <rect width="32" height="32" rx="6" fill="#1A1A1A"/>
-  <path d="M6 22 C10 22, 12 12, 16 12 C20 12, 22 18, 26 16" stroke="#B8964B" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <text
+    x="16"
+    y="22"
+    text-anchor="middle"
+    font-family="Georgia, 'Cormorant Garamond', serif"
+    font-style="italic"
+    font-size="20"
+    fill="#B8964B"
+  >Aia</text>
 </svg>
