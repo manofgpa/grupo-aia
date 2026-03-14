@@ -177,11 +177,9 @@ export function Hero() {
           <GoldRule width="8rem" forceVisible={stageGte('complete')} />
         </div>
 
-        {stageGte('complete') && (
-          <p className="mt-6 font-sans text-xs sm:text-sm tracking-[0.2em] uppercase text-stone animate-fade-in-up">
-            Psicologia Analítica
-          </p>
-        )}
+        <p className={`mt-6 font-sans text-xs sm:text-sm tracking-[0.2em] uppercase text-stone ${stageGte('complete') ? 'animate-fade-in-up' : 'opacity-0'}`}>
+          Psicologia Analítica
+        </p>
       </div>
 
       <ScrollIndicator visible={stageGte('complete')} />
