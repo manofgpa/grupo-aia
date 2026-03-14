@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary Colors */
+  --color-rich-black: #1A1A1A;
+  --color-signature-gold: #B8964B;
+  --color-warm-white: #F5F0E8;
+
+  /* Secondary Colors */
+  --color-champagne: #D4C5A9;
+  --color-espresso: #3D2E1F;
+  --color-antique-bronze: #8B7340;
+  --color-blush-clay: #C9A88C;
+
+  /* Neutrals */
+  --color-deep-charcoal: #2D2D2D;
+  --color-warm-gray: #5C5549;
+  --color-stone: #8A8378;
+  --color-sand: #C4BDB2;
+  --color-mist: #E5E0D8;
+
+  /* Accents */
+  --color-bright-gold: #D4A543;
+  --color-affirm-green: #6B8F5E;
+  --color-gentle-alert: #C47A4A;
+
+  /* Typography */
+  --font-serif: "Cormorant Garamond", "Georgia", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: var(--color-warm-white);
+    color: var(--color-deep-charcoal);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    line-height: 1.2;
+  }
+
+  ::selection {
+    background-color: var(--color-signature-gold);
+    color: var(--color-warm-white);
+  }
+}
+
+@keyframes bounce-once {
+  0%, 100% { transform: translateY(0); }
+  20% { transform: translateY(-8px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(-4px); }
+  80% { transform: translateY(0); }
+}
+
+@utility animate-bounce-once {
+  animation: bounce-once 1s ease-in-out 2s 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
