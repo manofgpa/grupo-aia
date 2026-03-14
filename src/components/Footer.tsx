@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="bg-rich-black py-12 px-6">
+    <footer className="bg-rich-black py-12 px-6 pb-[max(3rem,env(safe-area-inset-bottom))]">
       <div className="max-w-2xl mx-auto text-center">
         <p className="text-stone text-xs mb-2">
           &copy; {new Date().getFullYear()} Grupo Aia. Todos os direitos reservados.

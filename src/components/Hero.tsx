@@ -126,7 +126,7 @@ export function Hero() {
   let globalCharIndex = 0
 
   return (
-    <section className="relative min-h-screen bg-rich-black flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen bg-rich-black flex items-center justify-center overflow-hidden pt-[env(safe-area-inset-top)]">
       <BackgroundPulse />
       <GoldParticles visible={stageGte('particles')} />
       <Vignette />
