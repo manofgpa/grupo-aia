@@ -38,7 +38,7 @@
   body {
     margin: 0;
     font-family: var(--font-sans);
-    background-color: var(--color-warm-white);
+    background-color: transparent;
     color: var(--color-deep-charcoal);
     line-height: 1.6;
     font-size: 16px;

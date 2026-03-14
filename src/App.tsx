@@ -18,6 +18,7 @@ function App() {
       <ScrollProgress />
       <main>
         <Hero />
+        <div className="bg-warm-white">
         <About />
         <FullBleedPhoto src="/lights_window.jpg" alt="Light through window" aspectRatio="2/1" />
         <Pillars />
@@ -27,6 +28,7 @@ function App() {
         <Quote />
         <Team />
         <Contact />
+        </div>
       </main>
       <Footer />
       <WhatsAppButton />
