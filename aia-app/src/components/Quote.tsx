@@ -1,20 +1,26 @@
-import { SignatureSweep } from './SignatureSweep'
+import { useScrollReveal } from '../hooks/useScrollReveal'
+import { GoldRule } from './GoldRule'
 
 export function Quote() {
-  return (
-    <section className="py-24 px-6 bg-rich-black relative overflow-hidden">
-      {/* Background sweep */}
-      <SignatureSweep className="absolute top-12 -right-20 w-[500px] text-signature-gold opacity-[0.05]" />
+  const { ref, isVisible } = useScrollReveal()
 
-      <div className="max-w-4xl mx-auto text-center relative z-10">
-        <span className="font-serif text-signature-gold/20 text-[120px] leading-none select-none block -mb-16">
-          &ldquo;
-        </span>
-        <blockquote className="font-serif text-warm-white text-2xl md:text-4xl font-normal italic leading-relaxed mb-8">
+  return (
+    <section className="min-h-[70vh] bg-rich-black bg-parallax flex items-center justify-center px-6">
+      <div
+        ref={ref}
+        className={`max-w-3xl text-center transition-all duration-1000 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+        }`}
+      >
+        <blockquote className="font-serif text-warm-white text-2xl md:text-4xl italic leading-relaxed mb-8">
           Quando alguém entra pela porta do Aia, não se torna um paciente.
           Torna-se uma pessoa sendo acompanhada.
         </blockquote>
-        <SignatureSweep className="w-24 text-signature-gold mx-auto mb-6" />
+
+        <div className="flex justify-center mb-6">
+          <GoldRule width="6rem" />
+        </div>
+
         <p className="text-champagne text-sm tracking-wider uppercase">
           A Promessa do Grupo Aia
         </p>
