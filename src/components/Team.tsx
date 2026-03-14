@@ -4,12 +4,14 @@ const TEAM_MEMBERS = [
   {
     name: 'Andrea Guedes Mano',
     role: 'Psicóloga Clínica',
-    specialty: 'Terapia Clínica Sistêmica'
+    specialty: 'Terapia Clínica Sistêmica',
+    image: '/andrea.jpg',
   },
   {
     name: 'Luciana Takagi',
     role: 'Psicóloga Clínica',
-    specialty: 'Terapia Clínica Sistêmica'
+    specialty: 'Terapia Clínica Sistêmica',
+    image: '/luciana.jpg',
   },
 ] as const
 
@@ -17,6 +19,7 @@ function Member({
   name,
   role,
   specialty,
+  image,
 }: (typeof TEAM_MEMBERS)[number]) {
   const { ref, isVisible } = useScrollReveal()
 
@@ -27,7 +30,11 @@ function Member({
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
       }`}
     >
-      <div className="w-20 h-20 rounded-full bg-champagne/50 shrink-0" />
+      <img
+        src={image}
+        alt={name}
+        className="w-20 h-20 rounded-full object-cover shrink-0"
+      />
       <p className="text-warm-gray text-lg leading-relaxed">
         <strong className="text-deep-charcoal">{name}</strong>, {role}, dedica-se à {specialty}.
       </p>

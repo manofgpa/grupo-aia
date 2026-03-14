@@ -5,7 +5,7 @@ const FEATURES = [
   {
     title: 'Equipe Multidisciplinar',
     description:
-      'Psicologia, psiquiatria e práticas integrativas trabalhando juntas para oferecer o cuidado que você precisa.',
+      'Psicologia e terapias integrativas trabalhando juntas para oferecer o cuidado que você precisa.',
   },
   {
     title: 'Foco em Compulsões',
