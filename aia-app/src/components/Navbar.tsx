@@ -19,7 +19,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <a href="#">
-          <img src="/logo.png" alt="Grupo Aia" className="h-12 rounded-lg" />
+          <img src="/logo.png" alt="Grupo Aia" className="h-40 rounded-lg" />
         </a>
 
         <a

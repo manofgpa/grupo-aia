@@ -1,12 +1,14 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 interface FullBleedPhotoProps {
+  readonly src: string
   readonly alt: string
   readonly aspectRatio?: string
   readonly className?: string
 }
 
 export function FullBleedPhoto({
+  src,
   alt,
   aspectRatio = '3/1',
   className = '',
@@ -16,12 +18,17 @@ export function FullBleedPhoto({
   return (
     <div
       ref={ref}
-      role="img"
-      aria-label={alt}
-      className={`w-full bg-stone/20 grayscale transition-opacity duration-1000 ${
+      className={`w-full overflow-hidden transition-opacity duration-1000 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       } ${className}`}
       style={{ aspectRatio }}
-    />
+    >
+      <img
+        src={src}
+        alt={alt}
+        className="w-full h-full object-cover grayscale"
+        loading="lazy"
+      />
+    </div>
   )
 }

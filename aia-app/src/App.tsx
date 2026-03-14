@@ -17,11 +17,11 @@ function App() {
       <main>
         <Hero />
         <About />
-        <FullBleedPhoto alt="Hands intertwined" />
+        <FullBleedPhoto src="/lights_window.png" alt="Light through window" aspectRatio="2/1" />
         <Pillars />
-        <FullBleedPhoto alt="Light through window" aspectRatio="2/1" />
+        <FullBleedPhoto src="/textured_stone.png" alt="Textured stone" aspectRatio="5/2" />
         <Approach />
-        <FullBleedPhoto alt="Textured stone" aspectRatio="5/2" />
+        <FullBleedPhoto src="/hands_interwined.png" alt="Hands intertwined" />
         <Quote />
         <Team />
         <Contact />

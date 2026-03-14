@@ -2,24 +2,14 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const TEAM_MEMBERS = [
   {
-    name: 'Dra. Maria Helena',
+    name: 'Andrea Guedes Mano',
     role: 'Psicóloga Clínica',
-    specialty: 'Psicanálise e Envelhecimento',
+    specialty: 'Terapia Clínica Sistêmica'
   },
   {
-    name: 'Dr. Carlos Andrade',
-    role: 'Psiquiatra',
-    specialty: 'Psicogeriatria',
-  },
-  {
-    name: 'Dra. Beatriz Santos',
-    role: 'Neuropsicóloga',
-    specialty: 'Avaliação Cognitiva',
-  },
-  {
-    name: 'Dr. Fernando Lima',
-    role: 'Psicólogo',
-    specialty: 'Terapia Familiar Sistêmica',
+    name: 'Luciana Takagi',
+    role: 'Psicóloga Clínica',
+    specialty: 'Terapia Clínica Sistêmica'
   },
 ] as const
 

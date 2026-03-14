@@ -1,7 +1,7 @@
 import { GoldRule } from './GoldRule'
 
 const WHATSAPP_URL =
-  'https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta.'
+  'https://wa.me/5521972774227?text=Olá! Gostaria de agendar uma consulta.'
 
 export function Contact() {
   return (
@@ -15,7 +15,25 @@ export function Contact() {
           <GoldRule width="8rem" />
         </div>
 
-        <p className="text-warm-gray text-lg mb-2">+55 (11) 9999-9999</p>
+        <p className="text-warm-gray text-lg mb-1">+55 (21) 97277-4227</p>
+        <p className="text-warm-gray text-lg mb-1">
+          <a
+            href="mailto:adm@grupaiapsicologia.com.br"
+            className="hover:text-signature-gold transition-colors duration-200"
+          >
+            adm@grupaiapsicologia.com.br
+          </a>
+        </p>
+        <p className="text-warm-gray text-lg">
+          <a
+            href="https://www.instagram.com/grupo_aia_psi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-signature-gold transition-colors duration-200"
+          >
+            @grupo_aia_psi
+          </a>
+        </p>
 
         <a
           href={WHATSAPP_URL}

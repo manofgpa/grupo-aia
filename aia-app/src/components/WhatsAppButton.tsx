@@ -1,5 +1,5 @@
 const WHATSAPP_URL =
-  'https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta.'
+  'https://wa.me/5521972774227?text=Olá! Gostaria de agendar uma consulta.'
 
 export function WhatsAppButton() {
   return (
