@@ -178,7 +178,7 @@ export function Hero() {
         </div>
 
         <p className={`mt-6 font-sans text-xs sm:text-sm tracking-[0.2em] uppercase text-stone ${stageGte('complete') ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          Psicologia Analítica
+          Psicologia Sistêmica
         </p>
       </div>
 
