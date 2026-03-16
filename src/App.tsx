@@ -5,6 +5,7 @@ import { About } from './components/About'
 import { FullBleedPhoto } from './components/FullBleedPhoto'
 import { Pillars } from './components/Pillars'
 import { Approach } from './components/Approach'
+import { HowItWorks } from './components/HowItWorks'
 import { Quote } from './components/Quote'
 import { Team } from './components/Team'
 import { Contact } from './components/Contact'
@@ -25,6 +26,9 @@ function App() {
         <FullBleedPhoto src="/textured_stone.jpg" alt="Textured stone" aspectRatio="5/2" />
         <Approach />
         <FullBleedPhoto src="/hands_interwined.jpg" alt="Hands intertwined" />
+        </div>
+        <HowItWorks />
+        <div className="bg-warm-white">
         <Quote />
         <Team />
         <Contact />

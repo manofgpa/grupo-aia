@@ -11,7 +11,7 @@ export function Quote() {
   const { ref, isVisible } = useScrollReveal()
 
   return (
-    <section className="min-h-[70vh] bg-rich-black bg-parallax flex items-center justify-center px-6">
+    <section className="py-24 flex items-center justify-center px-6">
       <div
         ref={ref}
         className={`max-w-3xl text-center transition-all duration-1000 ${
@@ -20,13 +20,13 @@ export function Quote() {
       >
         <div className="relative">
           <span
-            className="absolute -top-8 -left-4 md:-top-10 md:-left-8 font-serif text-signature-gold text-6xl md:text-8xl opacity-40 select-none animate-float-gentle"
+            className="absolute -top-8 -left-4 md:-top-10 md:-left-8 font-serif text-signature-gold text-6xl md:text-8xl opacity-30 select-none animate-float-gentle"
             aria-hidden="true"
           >
             &ldquo;
           </span>
 
-          <blockquote className="font-serif text-warm-white text-2xl md:text-4xl italic leading-relaxed mb-8">
+          <blockquote className="font-serif text-rich-black text-2xl md:text-4xl italic leading-relaxed mb-8">
             {PHRASES.map((phrase, i) => (
               <span
                 key={i}
@@ -48,7 +48,7 @@ export function Quote() {
           <GoldRule width="6rem" />
         </div>
 
-        <p className="text-champagne text-sm tracking-wider uppercase">
+        <p className="text-warm-gray text-sm tracking-wider uppercase">
           A Promessa do Grupo Aia
         </p>
       </div>
