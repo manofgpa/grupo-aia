@@ -35,7 +35,6 @@ export function Quote() {
                 }`}
                 style={{
                   transitionDelay: isVisible ? `${i * 150}ms` : '0ms',
-                  clipPath: isVisible ? 'inset(0)' : 'inset(100% 0 0 0)',
                 }}
               >
                 {phrase}

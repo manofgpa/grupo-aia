@@ -12,14 +12,11 @@ export function About() {
       <div className="max-w-2xl mx-auto">
         <h2
           ref={heading.ref}
-          className={`font-serif text-rich-black text-4xl md:text-5xl font-normal mb-6 transition-all duration-800 ${
-            heading.isVisible ? 'opacity-100' : 'opacity-0'
+          className={`font-serif text-rich-black text-4xl md:text-5xl font-normal mb-6 transition-all duration-700 ${
+            heading.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
-          style={{
-            clipPath: heading.isVisible ? 'inset(0)' : 'inset(100% 0 0 0)',
-          }}
         >
-          Você não está quebrado. E não precisa passar por isso sozinho.
+          Você não está quebrada. E não precisa passar por isso sozinha.
         </h2>
 
         <GoldRule className="mb-10" />

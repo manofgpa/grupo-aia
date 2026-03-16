@@ -41,8 +41,7 @@ function Member({
           alt={name}
           className={`w-full h-full object-cover object-top grayscale-[30%] transition-all duration-500 hover:scale-105 hover:grayscale-0`}
           style={{
-            clipPath: isVisible ? 'inset(0)' : 'inset(100% 0 0 0)',
-            transition: `clip-path 0.8s ease-out ${transitionDelay}, transform 0.5s, filter 0.5s`,
+            transition: `transform 0.5s, filter 0.5s`,
           }}
         />
       </div>

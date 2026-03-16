@@ -72,12 +72,9 @@ export function HowItWorks() {
         <div className="text-center mb-12">
           <h2
             ref={heading.ref}
-            className={`font-serif text-warm-white text-4xl md:text-5xl font-normal mb-4 transition-all duration-800 ${
-              heading.isVisible ? 'opacity-100' : 'opacity-0'
+            className={`font-serif text-warm-white text-4xl md:text-5xl font-normal mb-4 transition-all duration-700 ${
+              heading.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
-            style={{
-              clipPath: heading.isVisible ? 'inset(0)' : 'inset(100% 0 0 0)',
-            }}
           >
             Como funciona?
           </h2>
