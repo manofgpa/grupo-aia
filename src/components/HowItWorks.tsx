@@ -21,7 +21,7 @@ const ITEMS = [
         <line x1="22" y1="22" x2="30" y2="26" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
       </svg>
     ),
-    title: '1h30 de duração',
+    title: '1h de duração',
     description: 'Tempo para aprofundar e se conectar',
   },
   {
